@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background: url(./assets/bg-page.jpg) no-repeat center;
+}
+form {
+  border: 1px solid red;
+  display: grid;
+  grid-template-areas: 'header img  ' 'announcement img ' 'footer img ';
+  grid-template-rows: 80px auto auto;
+  grid-template-columns: 800px auto;
+  width: 100%;
+}
+header {
+  border: 1px solid black;
+  grid-area: header;
+  margin-top: 30px;
+  padding-left: 200px;
+}
+.announcement {
+  grid-area: announcement;
+  border: 1px solid green;
+  margin-top: 100px;
+  padding-left: 200px;
+}
+.announcement span {
+  color: hsl(199, 80%, 86%);
+  font-weight: 300;
+}
+.announcement h1 {
+  font-size: 80px;
+  margin-bottom: 20px;
+  color: hsl(0, 6%, 24%);
+  font-weight: 400;
+}
+.announcement p {
+  font-weight: 600;
+  color: hsl(199, 78%, 65%);
+  margin-bottom: 20px;
+}
+.announcement input {
+  width: 50%;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid hsla(0, 4%, 54%, 0.2);
+  padding: 0 15px;
+}
+.announcement button {
+  width: 12%;
+  height: 41px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, hsl(202, 100%, 87%), hsl(214, 56%, 50%));
+  border: 1px;
+  position: relative;
+  right: 10%;
+  top: 1%;
+  box-shadow: 3px 10px 16px 1px hsl(202, 37%, 64%);
+  transition: box-shadow 0.2s;
+  transition: transform 0.1s;
+}
+.announcement button:hover {
+  box-shadow: 3px 10px 16px 1px hsl(202, 36%, 54%);
+  background: hsl(202, 88%, 83%);
+  transform: scale(1.1);
+}
+.img {
+  border: 1px solid blue;
+  grid-area: img;
+}
+footer {
+  grid-area: footer;
+  text-align: center;
+  padding: 24px;
+  font-size: 13px;
+  color: hsl(0, 6%, 24%);
+}
+footer>a{
+    text-decoration: none;
+    color: hsl(0, 0%, 54%);
+}
+footer>a:hover{
+    color: hsl(199, 100%, 48%);
+}
