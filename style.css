@@ -4,7 +4,7 @@
 }
 body {
   font-family: 'Josefin Sans', sans-serif;
-  background: url(./assets/bg-page.jpg) no-repeat center;
+  background: url(./assets/tela.png) no-repeat left/cover;
 }
 form {
   border: 1px solid red;
@@ -48,6 +48,9 @@ header {
   border: 2px solid hsla(0, 4%, 54%, 0.2);
   padding: 0 15px;
 }
+input:focus-visible {
+  border: 1px solid red;
+}
 .announcement button {
   width: 12%;
   height: 41px;
@@ -73,14 +76,14 @@ header {
 footer {
   grid-area: footer;
   text-align: center;
-  padding: 24px;
+  
   font-size: 13px;
   color: hsl(0, 6%, 24%);
 }
-footer>a{
-    text-decoration: none;
-    color: hsl(0, 0%, 54%);
+footer > a {
+  text-decoration: none;
+  color: hsl(0, 0%, 54%);
 }
-footer>a:hover{
-    color: hsl(199, 100%, 48%);
+footer > a:hover {
+  color: hsl(199, 100%, 48%);
 }
