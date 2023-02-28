@@ -15,8 +15,7 @@ form {
 header {
   border: 1px solid black;
   grid-area: 1/1/2/1;
-  padding-left: 150px;
-  padding-top: 24px;
+  padding: 24px 150px;
 }
 .announcement {
   grid-area: 1/1/2/3;
@@ -31,7 +30,7 @@ header {
 }
 .announcement h1 {
   font-size: 80px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   color: hsl(0, 6%, 24%);
   font-weight: 400;
 }
@@ -44,9 +43,9 @@ header {
   min-width: 300px;
 }
 .user {
-  border: 1px solid red;
   width: 380px;
   position: relative;
+  padding: 20px 0;
 }
 
 .user input {
@@ -119,10 +118,23 @@ footer > a:hover {
   .announcement h1 {
     font-size: 60px;
   }
-  .user{
+  .user {
     margin: 0 auto;
   }
-  .user button{
+  .user button {
     width: 60px;
+  }
+  header {
+    order: 1;
+  }
+  .img {
+    order: 2;
+  }
+  .announcement {
+    order: 3;
+    padding-top: 70px;
+  }
+  footer {
+    order: 4;
   }
 }
