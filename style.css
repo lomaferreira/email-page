@@ -13,7 +13,7 @@ form {
 }
 
 /*header*/
-.logo{
+.logo {
   border: 1px solid blue;
   grid-area: 1/1/2/4;
   padding: 24px 300px;
@@ -60,7 +60,7 @@ form {
 }
 input:focus {
   outline: none;
-  border:2px solid hsl(212, 93%, 68%);
+  border: 2px solid hsl(212, 93%, 68%);
 }
 .user button {
   width: 80px;
@@ -110,6 +110,7 @@ footer > a:hover {
   form {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .logo,
   .announcement {
@@ -119,31 +120,47 @@ footer > a:hover {
   .announcement p {
     text-align: center;
     width: 100%;
-    text-align: center;
   }
   .announcement h1 {
     font-size: 60px;
   }
   .user {
+    padding: 0 10px;
+    border: 1px solid red;
     margin: 0 auto;
   }
   .user button {
     width: 60px;
+    right: 17%;
   }
-  .logo{
+  .user input {
+    width: 280px;
+  }
+  .logo {
     order: 1;
     width: 100px;
   }
   .img {
     border: 1px solid red;
     order: 2;
-    width: 100vw;
   }
+
   .announcement {
     order: 3;
     padding-top: 70px;
   }
   footer {
     order: 4;
+  }
+}
+@media (max-width: 375px) {
+  .img {
+    width: 410px;
+  }
+  .user button {
+    right: 10%;
+  }
+  .user input {
+    margin: 0 24px;
   }
 }
