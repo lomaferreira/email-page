@@ -1,19 +1,15 @@
-const form=document.getElementById('form')
-//const click = document.getElementById('button');//
-form.addEventListener('submit', changes);
-const resp = document.getElementById('resp');
+const form = document.querySelector('form');
+const input = document.querySelector('input[name="email"]');
+const btn = document.querySelector('#button');
 
-function changes(event) { 
-event.preventDefault(
- const input = document.getElementById('email').value;
- if (input == "") {
-    //resp.InnerText="Please provide a valid email";
-    alert('Please provide a valid email');
- return false; 
-}
-) 
-    
- 
- 
- 
-}
+const validateInput = () => {
+  if (!input.value) {
+    //INDICA PRA PEGAR O PROXIMO ELEMENTO//
+    btn.nextElementSibling.classList.remove('resp-erro');
+
+  }
+};
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault(validateInput());
+});

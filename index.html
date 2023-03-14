@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-  
-
+   
     <form action="" method="post" id="form" required>
         <img src="./assets/logo.svg" alt="logo do site" class="logo"/>
       <div class="announcement">
@@ -28,12 +27,12 @@
           launch deals.
         </p>
         <div class="user">
-          <input type="email" placeholder="Email Address" id="email" />
+          <input type="email" placeholder="Email Address" id="email" name="email" />
           <button id="button" value="confirmar">
             <img src="./assets/icon-arrow.svg" alt="sinal de >" />
           </button>
         </div>
-        <div id="resp"></div>
+        <p class="resp resp-erro">Please provide valid email</p>
       </div>
       <picture class="img">
         <source srcset="assets/hero-mobile.jpg" media="(max-width:800px)" width="100%">
@@ -52,7 +51,7 @@
         >.
       </footer>
     </form>
-
- <script type="text/js" src="./script.js"></script>
+ <script src="./script.js"></script>
+ 
   </body>
 </html>
