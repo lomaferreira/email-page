@@ -64,13 +64,11 @@ input:focus {
 }
 /*valide*/
 .resp-erro {
-  display: none;
-}
-.resp {
   margin-left: 20px;
   font-size: 13px;
+  color: hsl(199, 78%, 65%);
+  border: 1px blue;
 }
-
 /*button*/
 .user button {
   width: 80px;
@@ -162,7 +160,7 @@ footer > a:hover {
   footer {
     order: 4;
   }
-  .resp {
+  .resp-erro {
     margin-left: 0;
   }
 }
@@ -176,7 +174,7 @@ footer > a:hover {
   .user input {
     margin: 0 24px;
   }
-  .resp {
+  .resp-erro {
     margin-left: 0;
   }
 }
