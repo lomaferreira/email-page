@@ -14,7 +14,6 @@ form {
 
 /*header*/
 .logo {
-  border: 1px solid blue;
   grid-area: 1/1/2/4;
   padding: 24px 300px;
 }
@@ -134,7 +133,6 @@ footer > a:hover {
   }
   .user {
     padding: 0 10px;
-    border: 1px solid red;
     margin: 0 auto;
   }
   .user button {
@@ -149,7 +147,6 @@ footer > a:hover {
     width: 100px;
   }
   .img {
-    border: 1px solid red;
     order: 2;
   }
 
