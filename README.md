@@ -15,14 +15,14 @@
 
 # Descrição do Projeto
 
-Uma Tela de Email  simples  de maneira responsiva com o uso de JS.
+Uma Tela de Email  simples  de maneira responsiva com o uso de Flexbox e Grid, validado com js.
 
 obs: projeto original no <a href="https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0"> site </a>
 
  # Tecnologias utilizadas
 - HTML e CSS
 - Git e Github
--JS
+- JS
 
 # Autor
 <img src="https://avatars.githubusercontent.com/u/103579480?s=400&u=bc39b7e8a7f3274212a4a7752c1eab088879ef71&v=4" width="25%"><br><sub >Paloma Santos Ferreira </sub>
